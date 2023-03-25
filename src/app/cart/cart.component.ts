@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-cart',
@@ -7,8 +6,13 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./cart.component.css'],
 })
 export class CartComponent implements OnInit {
-name = new FormControl('');
-address = new FormControl('');
+  myform: any;
+
+  onSubmit() {
+    if (this.myform.valid) {
+      console.log('Form Submitted!');
+    }
+  }
 
   ngOnInit(): void {}
 }

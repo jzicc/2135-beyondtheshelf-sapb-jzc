@@ -23,15 +23,8 @@
         <div class="row col-md inner-banner m-4">
           <div class="col-md-6 content bg-circle align-self-center text-center">
             <h1 class="text-center">Spring Sale!</h1>
-            <h5>Enjoy Amazing Spring 2023 sale</h5>
             <p class="dummy-desc">
-              Welcome to our Spring Sale on books! We’re offering great
-              discounts on a variety of books from genres like fiction,
-              non-fiction, romance, fantasy, mystery, science-fiction and more.
-              Get up to 50% off on select books, plus get free shipping on
-              orders over $50. Don’t miss out on this chance to stock up on your
-              favorite titles at great prices. Hurry and shop now, our sale
-              won’t last forever!
+              {{ home }}
             </p>
             <div class="button">
               <button type="button" class="btn">
@@ -52,14 +45,7 @@
         <div class="col-lg col-md col-sm col-xs">
           <h2 class="custom-title my-5">What We Offer</h2>
           <p class="dummy-desc">
-            We offer a wide selection of books for readers of all ages, from
-            classic novels to contemporary bestsellers. Our selection also
-            includes books from a variety of genres, including fiction,
-            non-fiction, children's, fantasy, mystery, science-fiction, and
-            more. In addition to books, we also offer a selection of magazines
-            and audiobooks. We also offer helpful customer service and
-            competitive prices to ensure that you get the best value for your
-            money.
+            {{ offer }}
           </p>
         </div>
       </div>
@@ -78,20 +64,14 @@
             />
             <div class="card-body">
               <h5 class="card-title">BOOK 1</h5>
-              <p class="card-text dummy-desc">Title: To Kill a Mockingbird</p>
-              <p class="card-text dummy-desc">Author: Harper Lee</p>
+              <p class="card-text dummy-desc">Title: {{ Title }}</p>
+              <p class="card-text dummy-desc">Author: {{ Author }}</p>
+              <p class="card-text dummy-desc">Publisher: {{ Publisher }}</p>
+              <p class="card-text dummy-desc">Category: {{ Category }}</p>
+              <p class="card-text dummy-desc">Price: {{ Price }}</p>
               <p class="card-text dummy-desc">
-                Publisher: J. B. Lippincott & Co.
-              </p>
-              <p class="card-text dummy-desc">
-                Category: Southern Gothic fiction
-              </p>
-              <p class="card-text dummy-desc">Price: $21.03</p>
-              <p class="card-text dummy-desc">
-                Description: To Kill a Mockingbird is both a young girls
-                coming-of-age story and a darker drama about the roots and
-                consequences of racism and prejudice, probing how good and evil
-                can coexist within a single community or individual.
+                Description:
+                {{ Desc }}
               </p>
 
               <button (click)="goToCart('cart')">Add To Cart</button>
@@ -178,6 +158,32 @@
               </p>
               <button (click)="goToCart('cart')">Add To Cart</button>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img
+            class="card-img-top"
+            src="https://stackblitz.com/files/github-eegfa5-rr3sgy/github/jzicc/2135-bookstore-sapb-jzc/main/src/app/pic4.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">BOOK 5</h5>
+            <p class="card-text dummy-desc">Title: The Lord of the Rings</p>
+            <p class="card-text dummy-desc">Author: J.R.R. Tolkien</p>
+            <p class="card-text dummy-desc">Publisher: Allen & Unwin</p>
+            <p class="card-text dummy-desc">
+              Category: Epic High-Fantasy Novel
+            </p>
+            <p class="card-text dummy-desc">Price: $18.29</p>
+            <p class="card-text dummy-desc">
+              Description: The Lord of the Rings is the saga of a group of
+              sometimes reluctant heroes who set forth to save their world from
+              consummate evil. Its many worlds and creatures were drawn from
+              Tolkien"s extensive knowledge of philology and folklore.
+            </p>
+            <button (click)="goToCart('cart')">Add To Cart</button>
           </div>
         </div>
       </div>

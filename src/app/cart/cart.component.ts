@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cart.component.css'],
 })
 export class CartComponent implements OnInit {
-  constructor() {}
+myform: any;
+ 
+  onSubmit() {
+    if (this.myform.valid) {
+      console.log("Form Submitted!");
+    }
+  }
 
-  ngOnInit() {}
+  ngOnInit(): void {}
 }

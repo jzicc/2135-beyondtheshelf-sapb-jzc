@@ -11,7 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CartComponent } from './cart/cart.component';
 
-import { CartService } from './cart.service';
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -33,6 +33,5 @@ const routes: Routes = [
   ],
   bootstrap: [AppComponent],
   exports: [RouterModule],
-  providers: [CartService]
 })
 export class AppModule {}

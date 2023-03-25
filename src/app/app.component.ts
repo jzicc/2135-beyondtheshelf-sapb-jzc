@@ -1,19 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { CartService } from './cart.service';
+import { Component, VERSION } from '@angular/core';
 
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements OnInit {
-  public carts = [];
+export class AppComponent {
+  name = 'Shem Baytan ';
 
-  constructor(
-    private _cartService: CartService
-  ) {}
+  //Two-way data binding
+  yourName = '';
 
-  ngOnInit() {
-    this.carts = this._cartService.getCarts();
-  }
+  //ngStyle
+  style = 'style';
 }

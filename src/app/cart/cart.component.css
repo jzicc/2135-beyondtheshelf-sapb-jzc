@@ -5,6 +5,10 @@
   border-radius: 3px;
 }
 
+.btn:hover {
+  background-color: #b46060;
+}
+
 .btn {
   background-color: #4d4d4d;
   color: white;
